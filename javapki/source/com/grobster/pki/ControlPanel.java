@@ -4,5 +4,5 @@ import java.io.*;
 import java.util.*;
 
 public class ControlPanel implements Serializable{
-	private ArrayList<> pendingRequests;
+	private ArrayList<Request> pendingRequests;
 }
