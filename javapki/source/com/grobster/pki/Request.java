@@ -44,6 +44,28 @@ public class Request implements Serializable{
 		requestNumber++;
 	}
 	
+	//setters
+	public void setReasonForReplacement(String reasonForReplacement) {
+		this.reasonForReplacement = reasonForReplacement;
+	}
+	
+	public void setUser(PLMUser user) {
+		this.user = user;
+	}
+	
+	public void setPicture(byte[] picture) {
+		this.picture = picture;
+	}
+	
+	public void setNotes(String notes) {
+		this.notes = notes;
+	}
+	
+	public void setPriority(Priority priority) {
+		this.priority = priority;
+	}
+	
+	
 	//getters
 	public String getReasonForReplacement() {
 		return reasonForReplacement;
