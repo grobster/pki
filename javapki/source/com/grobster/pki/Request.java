@@ -44,4 +44,30 @@ public class Request implements Serializable{
 		requestNumber++;
 	}
 	
+	//getters
+	public String getReasonForReplacement() {
+		return reasonForReplacement;
+	}
+	
+	public PLMUser getUser() {
+		return user;
+	}
+	
+	public byte[] getPicture() {
+		return picture;
+	}
+	
+	public String getNotes() {
+		return notes;
+	}
+	
+	public Priority getPriority() {
+		return priority;
+	}
+	
+	public static int getRequestNumber() {
+		return requestNumber;
+	}
+	
+	
 }
