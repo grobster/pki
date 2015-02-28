@@ -90,6 +90,4 @@ public class Request implements Serializable{
 	public static int getRequestNumber() {
 		return requestNumber;
 	}
-	
-	
 }
