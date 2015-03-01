@@ -9,7 +9,7 @@ public class Request implements Serializable{
 	private byte picture[];
 	private String notes;
 	private Priority priority;
-	private static int requestNumber;
+	private static int requestNumber = 1000; //begins with the number 1000;
 	
 	public enum Priority {
 		NORMAL, RUSH
