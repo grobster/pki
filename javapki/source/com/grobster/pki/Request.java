@@ -9,7 +9,7 @@ public class Request implements Serializable{
 	private byte picture[];
 	private String notes;
 	private Priority priority;
-	private static int requestNumber;
+	private static int requestNumber = 1000; //begins with the number 1000;
 	
 	public enum Priority {
 		NORMAL, RUSH
@@ -44,4 +44,50 @@ public class Request implements Serializable{
 		requestNumber++;
 	}
 	
+	//setters
+	public void setReasonForReplacement(String reasonForReplacement) {
+		this.reasonForReplacement = reasonForReplacement;
+	}
+	
+	public void setUser(PLMUser user) {
+		this.user = user;
+	}
+	
+	public void setPicture(byte[] picture) {
+		this.picture = picture;
+	}
+	
+	public void setNotes(String notes) {
+		this.notes = notes;
+	}
+	
+	public void setPriority(Priority priority) {
+		this.priority = priority;
+	}
+	
+	
+	//getters
+	public String getReasonForReplacement() {
+		return reasonForReplacement;
+	}
+	
+	public PLMUser getUser() {
+		return user;
+	}
+	
+	public byte[] getPicture() {
+		return picture;
+	}
+	
+	public String getNotes() {
+		return notes;
+	}
+	
+	public Priority getPriority() {
+		return priority;
+	}
+	
+	public static int getRequestNumber() {
+		return requestNumber;
+	}
 }
